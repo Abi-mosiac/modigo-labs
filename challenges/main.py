@@ -1,7 +1,5 @@
-def remove_duplicates(items):
-    # TODO: use a loop to build a new list with duplicates removed, keeping first occurrences
-    result = []
-    for item in items:
-        if item not in result:
-            result.append(item)
-    return result
+def calculate_perimeter(length, width):
+    # TODO: store 2 * (length + width) in a variable called perimeter
+    perimeter = 2 * (length + width) # TODO: replace 0 with the correct calculation
+
+    return perimeter
