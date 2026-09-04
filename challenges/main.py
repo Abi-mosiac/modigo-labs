@@ -1,4 +1,7 @@
-def swap_values(a, b):
-    new_a = b
-    new_b = a
-    return (new_a, new_b)
+def remove_duplicates(items):
+    # TODO: use a loop to build a new list with duplicates removed, keeping first occurrences
+    result = []
+    for item in items:
+        if item not in result:
+            result.append(item)
+    return result
