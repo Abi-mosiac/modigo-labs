@@ -1,13 +1,13 @@
-def fizzbuzz_counts(n):
-    counts = {"fizz": 0, "buzz": 0, "fizzbuzz": 0}
-    
-    for number in range(1, n + 1):
-        # TODO: check divisibility by 3 and 5, and increment the correct key in `counts`
-        if number % 3 == 0 and number % 5 == 0:
-            counts["fizzbuzz"] += 1
-        elif number % 3 == 0:
-            counts["fizz"] += 1
-        elif number % 5 == 0:
-            counts["buzz"] += 1
-    
-    return counts
+# Read the Celsius temperature from standard input
+# Remember to convert the input string to a number (float)
+celsius = float(input())
+# Convert Celsius to Fahrenheit using the formula: F = C * 9/5 + 32
+# Store the result in a variable called 'fahrenheit'
+ # Placeholder, replace with actual calculation
+fahrenheit = celsius * 9 / 5 + 32
+
+
+
+
+# Print the Fahrenheit temperature, formatted to one decimal place
+print(f"{fahrenheit:.1f}")
