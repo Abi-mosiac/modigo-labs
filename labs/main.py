@@ -1,7 +1,6 @@
-def compare_hobbies(person1_hobbies, person2_hobbies):
-    # TODO: use set operations to find shared, only_person1, and only_person2 hobbies
-    dictionary = {}
-    dictionary["shared"] = person1_hobbies.intersection(person2_hobbies)
-    dictionary["only_person1"] = person1_hobbies - person2_hobbies
-    dictionary["only_person2"] = person2_hobbies - person1_hobbies
-    return dictionary
+def unmatched_skus(warehouse_a, warehouse_b):
+    # TODO: compute the symmetric difference using union/intersection/difference,
+    # without using ^ or .symmetric_difference()
+    a = warehouse_a - warehouse_b
+    b = warehouse_b - warehouse_a
+    return a.union(b)
