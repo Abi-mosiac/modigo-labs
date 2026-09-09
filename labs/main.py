@@ -1,9 +1,6 @@
-def total_word_count(sentences):
-    count = 0
-
-    for sentence in sentences:
-        s = len(sentence.split())
-        count += s
-
-        
-    return count
+def count_unique_coordinates(coordinates):
+    unique = []
+    for coord in coordinates:
+        if coord not in unique:
+            unique.append(coord)
+    return len(unique)
